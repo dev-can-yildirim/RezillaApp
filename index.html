@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rezilla</title>
+      <meta property="og:title" content="October Frontend Rezilla" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <meta
+         property="og:description"
+         content="Html ve Css kullanılarak yapılmış otel tanıtma web sitesi"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <!-- Google Font: Poppins -->
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://Rezilla.com" />
+   </head>
+   <body>
+      <header class="top-header">
+         <div class="frame-container sub-header-content">
+            <div class="left-side">
+               <img src="images/vector.png" alt="Location Icon" class="icon" />
+               <span class="address-text"
+                  >Rezilla, 18 Grattan St, Brooklyn</span
+               >
+            </div>
+
+            <div class="right-side">
+               <div class="contact-item">
+                  <img src="images/phone.png" alt="Phone Icon" class="icon" />
+                  <span class="phone-text">+1 206-214-2298</span>
+               </div>
+               <div class="contact-item">
+                  <img src="images/mail.png" alt="Mail Icon" class="icon" />
+                  <span class="email-text">support@rezilla.com</span>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="navbar-container frame-container">
+         <div class="navbar-box" id="navbar-box-1">
+            <a href="" class="navbar-link" id="home-link">Home</a
+            ><a href="" class="navbar-link">About</a
+            ><a href="" class="navbar-link">Listings</a
+            ><a href="" class="navbar-link">Services</a
+            ><a href="" class="navbar-link">Blogs</a>
+         </div>
+         <div class="navbar-box" id="navbar-box-2">
+            <a href="" class="navbar-link"
+               ><img src="images/navbar-images/rezilla-logo.svg" alt=""
+            /></a>
+         </div>
+         <div class="navbar-box" id="navbar-box-3">
+            <a class="navbar-link" href=""
+               ><img src="images/navbar-images/user-icon-rezilla.svg" alt="" />
+               Login/Register</a
+            >
+            <a class="navbar-link" id="add-listing-link" href=""
+               ><img
+                  src="images/navbar-images/house-icon-rezilla.svg"
+                  alt=""
+               />Add Listing</a
+            >
+         </div>
+         <div class="navbar-box" id="navbar-box-4">
+            <a href="#modal" class="open-btn">
+               <img
+                  src="images/navbar-images/🦆 icon _hamburger menu_.svg"
+                  alt="hamburger-icon"
+               />
+            </a>
+
+            <div id="modal" class="modal">
+               <div class="modal__box">
+                  <div class="modal-close">
+                     <a class="close" href="#"
+                        ><img
+                           src="images/navbar-images/close-rezilla.svg"
+                           alt=""
+                     /></a>
+                  </div>
+                  <div class="modal-links">
+                     <a href="">Home</a>
+                     <a href="">About</a>
+                     <a href="">Listings</a>
+                     <a href="">Services</a>
+                     <a href="">Blogs</a>
+
+                     <div class="modal-button">
+                        <a class="navbar-link" href=""
+                           ><img
+                              src="images/navbar-images/user-icon-rezilla.svg"
+                              alt=""
+                           />
+                           Login/Register</a
+                        >
+                        <a class="navbar-link" id="add-listing-link" href=""
+                           ><img
+                              src="images/navbar-images/house-icon-rezilla.svg"
+                              alt=""
+                           />Add Listing</a
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="hero-container frame-container">
+         <div class="hero-section">
+            <div class="background-hero"></div>
+
+            <div class="left-hero">
+               <div class="left-hero-top-div">
+                  <p class="purple-header">REAL ESTATE</p>
+                  <h1 class="left-hero-header">
+                     Find a perfect home you love..!
+                  </h1>
+                  <p class="green-text" id="left-hero-green-text">
+                     Etiam eget elementum elit. Aenean dignissim dapibus
+                     vestibulum. Integer a dolor eu sapien sodales vulputate ac
+                     in purus.
+                  </p>
+                  <img
+                     class="ellipse-left-hero"
+                     src="images/Apply-Bases İmages/elipse-rezilla.svg"
+                     alt=""
+                  />
+
+                  <div class="carousel-container">
+                     <input type="radio" name="slide" id="slide1" checked />
+                     <input type="radio" name="slide" id="slide2" />
+                     <input type="radio" name="slide" id="slide3" />
+                     <div class="slide-container">
+                        <div class="carousel-item-container">
+                           <div class="carousel-item">
+                              <img src="images/carousel/bedroom.jpg" />
+                           </div>
+                           <div class="carousel-item item-2">
+                              <img src="images/carousel/bedroom-2.jpg" />
+                           </div>
+                           <div class="carousel-item item-3">
+                              <img src="images/carousel/bedroom-3.jpg" />
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="dot-container">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                     </div>
+                     <label
+                        class="carousel-arrow carousel-left-arrow arrow-image-1"
+                        for="slide3"
+                        >&lt;</label
+                     >
+                     <label
+                        class="carousel-arrow carousel-right-arrow arrow-image-1"
+                        for="slide2"
+                        >&gt;</label
+                     >
+
+                     <label
+                        class="carousel-arrow carousel-left-arrow arrow-image-2"
+                        for="slide1"
+                        >&lt;</label
+                     >
+                     <label
+                        class="carousel-arrow carousel-right-arrow arrow-image-2"
+                        for="slide3"
+                        >&gt;</label
+                     >
+
+                     <label
+                        class="carousel-arrow carousel-left-arrow arrow-image-3"
+                        for="slide2"
+                        >&lt;</label
+                     >
+                     <label
+                        class="carousel-arrow carousel-right-arrow arrow-image-3"
+                        for="slide1"
+                        >&gt;</label
+                     >
+                  </div>
+               </div>
+            </div>
+            <div class="right-hero">
+               <form class="hero-login" action="">
+                  <div class="sale-rent">
+                     <a class="sale-link" href="">For Sale</a>
+                     <a style="color: rgba(128, 128, 128, 1)" href=""
+                        >For Rent</a
+                     >
+                  </div>
+                  <div class="hero-inputs">
+                     <div class="input-divs">
+                        <div class="input-div">
+                           <input
+                              id="a"
+                              type="text"
+                              placeholder="New York, San Fransisco, etc"
+                           />
+                        </div>
+                        <div class="input-div">
+                           <input
+                              id="b"
+                              type="text"
+                              placeholder="Select Property Type"
+                           />
+                        </div>
+                        <div class="input-div">
+                           <input
+                              id="c"
+                              type="text"
+                              placeholder="Select Rooms"
+                           />
+                           <p class="input-p">
+                              <img
+                                 src="images/Hero-images/filter-rezilla.svg"
+                                 alt=""
+                              />
+                              Advance Search
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="search-button">
+                        <button>
+                           <img
+                              src="images/Hero-images/search-rezilla.svg"
+                              alt=""
+                           />Search
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <section class="hero-stars-element-section frame-container">
+         <div class="hero-stars-element element-1">
+            <ul class="hero-stack">
+               <li>
+                  <img
+                     src="images/hero-stars-elements-images/hero-stars-profile1-rezilla.svg"
+                     alt=""
+                  />
+               </li>
+               <li>
+                  <img
+                     src="images/hero-stars-elements-images/hero-stars-profile2-rezilla.svg"
+                     alt=""
+                  />
+               </li>
+               <li>
+                  <img
+                     src="images/hero-stars-elements-images/hero-stars-profile3-rezilla.svg"
+                     alt=""
+                  />
+               </li>
+               <li>
+                  <img
+                     src="images/hero-stars-elements-images/hero-stars-profile4-rezilla.svg"
+                     alt=""
+                  />
+               </li>
+               <li>
+                  <img
+                     src="images/hero-stars-elements-images/hero-stars-profile5-rezilla.svg"
+                     alt=""
+                  />
+               </li>
+               <li class="more">+</li>
+            </ul>
+            <p class="hero-stars-content">
+               72k+ Happy <br />
+               Customers
+            </p>
+         </div>
+         <div class="hero-stars-element element-2">
+            <img
+               src="images/hero-stars-elements-images/hero-stars-profile-6.svg"
+               alt=""
+            />
+            <p class="hero-stars-content">
+               200+ New !<br />
+               Listings Everyday
+            </p>
+         </div>
+      </section>
+
+      <section class="partners-section">
+         <div class="container">
+            <div class="partners-section-head">
+               <h5 class="title">
+                  Trusted by 100+ Companies across the globe!
+               </h5>
+            </div>
+            <div class="logos">
+               <img
+                  class="ellipse"
+                  src="images/hero-stars-elements-images/ellipse2.png"
+                  alt="ellipse"
+               />
+               <img
+                  src="images/hero-stars-elements-images/goole.png"
+                  alt="Google"
+               />
+               <img
+                  src="images/hero-stars-elements-images/amazon.png"
+                  alt="amazon"
+               />
+               <img
+                  src="images/hero-stars-elements-images/logitech.png"
+                  alt="logitech"
+               />
+               <img
+                  src="images/hero-stars-elements-images/spotify.png"
+                  alt="spotify"
+               />
+               <img
+                  src="images/hero-stars-elements-images/samsung.png"
+                  alt="samsung"
+               />
+               <img
+                  src="images/hero-stars-elements-images/netflix.png"
+                  alt="netflix"
+               />
+            </div>
+         </div>
+      </section>
+
+      <section class="apply-base-section frame-container">
+         <div class="apply-base-box">
+            <div class="apply-base-box-left">
+               <p class="purple-header">WHO ARE WE</p>
+               <h1 class="apply-base-header">
+                  Assisting individuals in locating the appropriate real estate.
+               </h1>
+               <p class="green-text">
+                  Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+                  dignissim purus. Nulla convallis ipsum molestie nibh
+                  malesuada, ac malesuada leo volutpat.
+               </p>
+               <div class="donec-div">
+                  <img
+                     src="images/Apply-Bases İmages/smart-home-rezilla.svg"
+                     alt=""
+                  />
+                  <div class="donec-div-bottom">
+                     <h1>Donec porttitor euismod</h1>
+                     <p class="green-text">
+                        Nullam a lacinia ipsum, nec <br />
+                        dignissim purus. Nulla
+                     </p>
+                  </div>
+               </div>
+               <div class="donec-div">
+                  <img
+                     src="images/Apply-Bases İmages/user-rezilla.svg"
+                     alt=""
+                  />
+                  <div class="donec-div-bottom">
+                     <h1>Donec porttitor euismod</h1>
+                     <p class="green-text">
+                        Nullam a lacinia ipsum, nec <br />
+                        dignissim purus. Nulla
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="apply-base-box-right">
+               <div>
+                  <img
+                     class="apply-base-box-img-1"
+                     src="images/Apply-Bases İmages/house-pool-rezilla.jpg"
+                     alt=""
+                  />
+               </div>
+
+               <div class="apply-base-box-right-right">
+                  <img
+                     class="apply-base-box-img-2"
+                     src="images/Apply-Bases İmages/bedroom-rezilla.jpg"
+                     alt=""
+                  /><img
+                     class="apply-base-box-img-3"
+                     src="images/Apply-Bases İmages/living-room-rezilla.jpg"
+                     alt=""
+                  /><img
+                     class="ellipse"
+                     src="images/Apply-Bases İmages/elipse-rezilla.svg"
+                     alt=""
+                  />
+                  <div class="real-estate-text">
+                     <img
+                        src="images/Apply-Bases İmages/real-estate-text-rezilla.svg"
+                        alt=""
+                     />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="listing-section frame-container">
+         <div class="listing-container">
+            <div class="listing-content">
+               <p class="apply-base-first-header">CHECKOUT OUR NEW</p>
+               <h2 class="apply-base-header">Latest Listed Properties</h2>
+               <p class="apply-base-content">
+                  Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+                  dignissim purus.
+               </p>
+            </div>
+            <div class="listing-button">
+               <button class="purple-button-outline">All</button>
+               <button class="purple-button">Sell</button>
+               <button class="purple-button-outline">Rent</button>
+            </div>
+         </div>
+      </section>
+
+      <section class="property-listing-section frame-container">
+         <div class="property-listing-container">
+            <div class="property-listing-card">
+               <div class="property-listing-card-image">
+                  <div class="linear-image">
+                     <img
+                        class="listing-image"
+                        src="images/property-listing-images/listing-image-4.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <span class="listing-span popular"
+                     ><img
+                        src="images/property-listing-images/🦆 icon _fire_.svg"
+                        alt=""
+                     />Popular</span
+                  >
+               </div>
+               <div class="listing-card-contents">
+                  <h3>$ 5,970</h3>
+                  <h4>Tranquil Haven in the Woods</h4>
+                  <p>103 Wright CourtBurien, WA 98168</p>
+                  <div class="listing-card-icons">
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bed-rezilla-icon.svg"
+                           alt=""
+                        />
+                        <p>4 Beds</p>
+                     </div>
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bothrezilla-icon.svg.svg"
+                           alt=""
+                        />
+                        <p>3 Bath</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="property-listing-card">
+               <div class="property-listing-card-image">
+                  <img
+                     class="listing-image"
+                     src="images/property-listing-images/listing-image-3.jpg"
+                     alt=""
+                  />
+                  <span class="listing-span home"
+                     ><img
+                        src="images/property-listing-images/icon-home-rezilla.svg"
+                        alt=""
+                     />New Listing</span
+                  >
+               </div>
+               <div class="listing-card-contents">
+                  <h3>$ 1,970</h3>
+                  <h4>Serene Retreat by the Lake</h4>
+                  <p>1964 Jehovah Drive, VA 22408</p>
+                  <div class="listing-card-icons">
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bed-rezilla-icon.svg"
+                           alt=""
+                        />
+                        <p>3 Beds</p>
+                     </div>
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bothrezilla-icon.svg.svg"
+                           alt=""
+                        />
+                        <p>2 Bath</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="property-listing-card">
+               <div class="property-listing-card-image">
+                  <img
+                     class="listing-image"
+                     src="images/property-listing-images/listing-image-2.jpg"
+                     alt=""
+                  />
+                  <span class="listing-span dolar"
+                     ><img
+                        src="images/property-listing-images/icon-dolar-rezilla.svg"
+                        alt=""
+                     />Discounted Price</span
+                  >
+               </div>
+               <div class="listing-card-contents">
+                  <h3>$ 3,450</h3>
+                  <h4>Charming Cottage in the Meadow</h4>
+                  <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                  <div class="listing-card-icons">
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bed-rezilla-icon.svg"
+                           alt=""
+                        />
+                        <p>4 Beds</p>
+                     </div>
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bothrezilla-icon.svg.svg"
+                           alt=""
+                        />
+                        <p>4 Bath</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="property-listing-card">
+               <div class="property-listing-card-image">
+                  <img
+                     class="listing-image"
+                     src="images/property-listing-images/listing-image-1.jpg"
+                     alt=""
+                  />
+                  <span class="listing-span popular"
+                     ><img
+                        src="images/property-listing-images/🦆 icon _fire_.svg"
+                        alt=""
+                     />Popular</span
+                  >
+               </div>
+               <div class="listing-card-contents">
+                  <h3>$ 2,389</h3>
+                  <h4>Grand Estate on the Hilltop</h4>
+                  <p>103 Wright CourtBurien, WA 98168</p>
+                  <div class="listing-card-icons">
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bed-rezilla-icon.svg"
+                           alt=""
+                        />
+                        <p>4 Beds</p>
+                     </div>
+                     <div class="listing-card-icons-prop">
+                        <img
+                           src="images/property-listing-images/bothrezilla-icon.svg.svg"
+                           alt=""
+                        />
+                        <p>3 Bath</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="services-section frame-container">
+         <div class="services-container">
+            <div class="serices-header">
+               <p>OUR SERVICES</p>
+               <h2>Donec porttitor euismod dignissim</h2>
+            </div>
+            <div class="services-cards">
+               <div class="service-card">
+                  <div class="service-image">
+                     <img
+                        src="images/services-section-images/founder-rezilla.svg"
+                        alt=""
+                     />
+                  </div>
+                  <div class="service-card-content">
+                     <h4>Buy a New Home</h4>
+                     <p>
+                        Donec porttitor euismod dignissim. Nullam a lacinia
+                        ipsum, nec dignissim purus.
+                     </p>
+                  </div>
+               </div>
+               <div class="service-card">
+                  <div class="service-image">
+                     <img
+                        src="images/services-section-images/house-rezilla.svg"
+                        alt=""
+                     />
+                  </div>
+                  <div class="service-card-content">
+                     <h4>Sell a House</h4>
+                     <p>
+                        Donec porttitor euismod dignissim. Nullam a lacinia
+                        ipsum, nec dignissim purus.
+                     </p>
+                  </div>
+               </div>
+               <div class="service-card">
+                  <div class="service-image">
+                     <img
+                        src="images/services-section-images/bed-rezilla.svg"
+                        alt=""
+                     />
+                  </div>
+                  <div class="service-card-content">
+                     <h4>Rent a House</h4>
+                     <p>
+                        Donec porttitor euismod dignissim. Nullam a lacinia
+                        ipsum, nec dignissim purus.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="loc-section">
+         <div class="title">
+            <p>AREAS ACROSS THE TOWN</p>
+            <h2>Neighborhood Properties</h2>
+         </div>
+         <div class="loc-grid-container">
+            <div class="image-container item-1">
+               <img
+                  class="container-images"
+                  src="images/location-section/216.jpg"
+                  alt="house"
+               />
+               <div class="overlay-text">
+                  <h1>216</h1>
+                  <h4>New York City, NY</h4>
+               </div>
+            </div>
+            <div class="image-container item-2">
+               <img
+                  class="container-images"
+                  src="images/location-section/141.jpg"
+                  alt="house"
+               />
+               <div class="overlay-text">
+                  <h1>141</h1>
+                  <h4>Houston, TX</h4>
+               </div>
+            </div>
+            <div class="image-container item-3">
+               <img
+                  class="container-images"
+                  src="images/location-section/212.jpg"
+                  alt="house"
+               />
+               <div class="overlay-text">
+                  <h1>212</h1>
+                  <h4>San Diego, CA</h4>
+               </div>
+            </div>
+            <div class="image-container item-4">
+               <img
+                  class="container-images"
+                  src="images/location-section/183.jpg"
+                  alt="house"
+               />
+               <div class="overlay-text">
+                  <h1>183</h1>
+                  <h4>Philadelphia, PA</h4>
+               </div>
+            </div>
+            <div class="image-container item-5">
+               <img
+                  class="container-images"
+                  src="images/location-section/112.jpg"
+                  alt="house"
+               />
+               <div class="overlay-text">
+                  <h1>112</h1>
+                  <h4>San Francisco, CA</h4>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="members-section frame-container">
+         <div class="members-container">
+            <div class="members-header">
+               <p>INTRODUCE YOURSELF TO</p>
+               <h2>Our Team of Experts</h2>
+            </div>
+            <div class="members-cards">
+               <div class="member">
+                  <img
+                     src="images/member-section-images/rezilla-member-1.jpg"
+                     alt=""
+                  />
+                  <h3>Brendon M</h3>
+                  <p>CEO & Founder</p>
+               </div>
+               <div class="member">
+                  <img
+                     src="images/member-section-images/rezilla-member-2.jpg"
+                     alt=""
+                  />
+                  <h3>Jodi J. Appleby</h3>
+                  <p>Real Estate Developer</p>
+               </div>
+               <div class="member">
+                  <img
+                     src="images/member-section-images/rezilla-member-3.jpg"
+                     alt=""
+                  />
+                  <h3>Justin S. Meza</h3>
+                  <p>Listing Agent</p>
+               </div>
+               <div class="member">
+                  <img
+                     src="images/member-section-images/rezilla-member-4.jpg"
+                     alt=""
+                  />
+                  <h3>Susan T. Smith</h3>
+                  <p>Buyer's Agent</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="trending-section frame-container">
+         <div class="trending-container frame-container">
+            <div class="trending-container-header">
+               <p>WHAT’S TRENDING</p>
+               <h1>Latest Blogs & Posts</h1>
+            </div>
+            <div class="blog-carousel-container">
+               <input type="radio" name="blog-slide" id="blog-slide1" checked />
+               <input type="radio" name="blog-slide" id="blog-slide2" />
+               <input type="radio" name="blog-slide" id="blog-slide3" />
+
+               <div class="blog-slide-container">
+                  <div class="blog-carousel-item-container">
+                     <div class="blog-carousel-item">
+                        <div class="slide-content">
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img1.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">28</span>
+                                    <span class="date-month">Tue</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>Top 10 Home Buying Mistakes to Avoid</h3>
+                                 <p>
+                                    Etiam eget elementum elit. Aenean dignissim
+                                    dapibus vestibulum.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img2.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">08</span>
+                                    <span class="date-month">Mon</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>
+                                    How to Stage Your Home for a Quick Sale
+                                 </h3>
+                                 <p>
+                                    Nullam odio lacus, dictum quis pretium
+                                    congue, vehicula venenatis nunc.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img3.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">26</span>
+                                    <span class="date-month">Wed</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>5 Tips for First-Time Home Sellers</h3>
+                                 <p>
+                                    In hac habitasse platea dictumst. Phasellus
+                                    vel velit vel augue maximus.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="blog-carousel-item blog-item-2">
+                        <div class="slide-content">
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img1.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">28</span>
+                                    <span class="date-month">Tue</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>Top 10 Home Buying Mistakes to Avoid</h3>
+                                 <p>
+                                    Etiam eget elementum elit. Aenean dignissim
+                                    dapibus vestibulum.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img2.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">08</span>
+                                    <span class="date-month">Mon</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>
+                                    How to Stage Your Home for a Quick Sale
+                                 </h3>
+                                 <p>
+                                    Nullam odio lacus, dictum quis pretium
+                                    congue, vehicula venenatis nunc.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img3.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">26</span>
+                                    <span class="date-month">Wed</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>5 Tips for First-Time Home Sellers</h3>
+                                 <p>
+                                    In hac habitasse platea dictumst. Phasellus
+                                    vel velit vel augue maximus.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="blog-carousel-item blog-item-3">
+                        <div class="slide-content">
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img1.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">28</span>
+                                    <span class="date-month">Tue</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>Top 10 Home Buying Mistakes to Avoid</h3>
+                                 <p>
+                                    Etiam eget elementum elit. Aenean dignissim
+                                    dapibus vestibulum.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img2.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">08</span>
+                                    <span class="date-month">Mon</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>
+                                    How to Stage Your Home for a Quick Sale
+                                 </h3>
+                                 <p>
+                                    Nullam odio lacus, dictum quis pretium
+                                    congue, vehicula venenatis nunc.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                           <div class="blog-card">
+                              <div class="card-image-wrapper">
+                                 <img
+                                    src="images/blog-carousel-images/blog-carousel-img3.jpg"
+                                 />
+                                 <div class="date-badge">
+                                    <span class="date-day">26</span>
+                                    <span class="date-month">Wed</span>
+                                 </div>
+                              </div>
+                              <div class="card-content">
+                                 <h3>5 Tips for First-Time Home Sellers</h3>
+                                 <p>
+                                    In hac habitasse platea dictumst. Phasellus
+                                    vel velit vel augue maximus.
+                                 </p>
+                                 <a href="#" class="card-arrow"
+                                    ><img
+                                       src="images/blog-carousel-images/Arrow 1.svg"
+                                       alt=""
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="blog-dot-container">
+                  <label for="blog-slide1"></label>
+                  <label for="blog-slide2"></label>
+                  <label for="blog-slide3"></label>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="testimonitals-section frame-container">
+         <div class="testimonitals-container">
+            <div class="testimonitals-content">
+               <h6>TESTIMONIALS</h6>
+               <h2>Look What Our Customers Say!</h2>
+               <p>
+                  Fusce venenatis tellus a felis scelerisque, non pulvinar est
+                  pellentesque.
+               </p>
+               <div class="testimonitals-arrows">
+                  <img
+                     class="testimonitals-arrow"
+                     src="images/testimonitals-section/left-arrow-rezilla.svg"
+                     alt="left-arrow"
+                  /><img
+                     class="testimonitals-arrow"
+                     src="images/blog-carousel-images/Arrow 1.svg"
+                     alt="right-arrow"
+                  />
+               </div>
+            </div>
+            <div class="testimonial-carousel-container">
+               <input type="radio" name="t-slide" id="t-slide-1" checked />
+               <input type="radio" name="t-slide" id="t-slide-2" />
+               <input type="radio" name="t-slide" id="t-slide-3" />
+
+               <div class="t-slide-container">
+                  <div class="t-carousel-item-container">
+                     <div class="t-carousel-item">
+                        <div class="t-slide-content">
+                           <div class="testimonial-card">
+                              <img
+                                 src="images/testimonitals-section/“.svg"
+                                 alt=""
+                              />
+                              <p class="testimonial-text">
+                                 I highly recommend Jodi J. Appleby. She was
+                                 attentive to our needs and worked tirelessly to
+                                 find us the perfect home. We couldn't be
+                                 happier with our new place!
+                              </p>
+                              <hr class="testimonial-divider" />
+                              <div class="testimonial-footer">
+                                 <div class="author-info">
+                                    <img
+                                       src="images/testimonitals-section/testimonials-profile-rezilla.svg"
+                                       alt="David Chen"
+                                       class="author-avatar"
+                                    />
+                                    <span class="author-name"
+                                       >Barbara D. Smith</span
+                                    >
+                                 </div>
+                                 <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span
+                                    ><span>★</span
+                                    ><span class="star-gray">★</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="t-carousel-item">
+                        <div class="t-slide-content">
+                           <div class="testimonial-card">
+                              <img
+                                 src="images/testimonitals-section/“.svg"
+                                 alt=""
+                              />
+                              <p class="testimonial-text">
+                                 A truly professional and dedicated team. They
+                                 listened to every detail and delivered beyond
+                                 our expectations. The entire experience was
+                                 smooth and positive.
+                              </p>
+                              <hr class="testimonial-divider" />
+                              <div class="testimonial-footer">
+                                 <div class="author-info">
+                                    <img
+                                       src="images/testimonitals-section/testimonials-profile-rezilla.svg"
+                                       alt="David Chen"
+                                       class="author-avatar"
+                                    />
+                                    <span class="author-name">David Chen</span>
+                                 </div>
+                                 <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span
+                                    ><span>★</span><span>★</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="t-carousel-item">
+                        <div class="t-slide-content">
+                           <div class="testimonial-card">
+                              <img
+                                 src="images/testimonitals-section/“.svg"
+                                 alt=""
+                              />
+                              <p class="testimonial-text">
+                                 I highly recommend Jodi J. Appleby. She was
+                                 attentive to our needs and worked tirelessly to
+                                 find us the perfect home. We couldn't be
+                                 happier with our new place!
+                              </p>
+                              <hr class="testimonial-divider" />
+                              <div class="testimonial-footer">
+                                 <div class="author-info">
+                                    <img
+                                       src="images/testimonitals-section/testimonials-profile-rezilla.svg"
+                                       alt="David Chen"
+                                       class="author-avatar"
+                                    />
+                                    <span class="author-name"
+                                       >Barbara D. Smith</span
+                                    >
+                                 </div>
+                                 <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span
+                                    ><span>★</span
+                                    ><span class="star-gray">★</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="t-dot-container">
+                  <label for="t-slide-1"></label>
+                  <label for="t-slide-2"></label>
+                  <label for="t-slide-3"></label>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="cta-banner-section frame-container">
+         <div class="cta-banner-container">
+            <div class="cta-buble-1"></div>
+            <div class="cta-image">
+               <div class="cta-buble-2"></div>
+               <img
+                  src="images/cta-banner-images/c3c593fb3181180cd3d68307557bc76450ee89ef.png"
+                  alt=""
+               />
+            </div>
+            <div class="cta-content">
+               <div class="cta-text">
+                  <h2>Become a Agent.</h2>
+                  <p>
+                     Fusce venenatis tellus a felis scelerisque. venenatis
+                     tellus a felis scelerisque.
+                  </p>
+                  <div class="cta-buble-3"></div>
+               </div>
+               <div class="cta-button"><a>Register Now</a></div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <section class="footer-wrapper">
+            <div class="footer-section frame-container">
+               <div class="footer-item footer-item1">
+                  <div class="logo-container-top">
+                     <div class="logo-container">
+                        <img
+                           src="images/hero-stars-elements-images/house.png"
+                           alt="logo"
+                        /><span>Rezilla</span>
+                     </div>
+                     <p>2728 Hickory StreetSalt Lake City, UT 84104</p>
+                  </div>
+                  <div class="logo-container-bottom">
+                     <div class="number-container">
+                        <img
+                           src="images/hero-stars-elements-images/phone.png"
+                           alt="phone"
+                        />
+                        <span>+1 206-214-2298</span>
+                     </div>
+                     <div class="mail-container">
+                        <img
+                           src="images/hero-stars-elements-images/mail icon.png"
+                           alt="mail icon"
+                        />
+                        <span>support@rezilla.com</span>
+                     </div>
+                  </div>
+               </div>
+               <ul class="footer-item footer-item2">
+                  <h4>Quick Links</h4>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Listing</li>
+                  <li>Services</li>
+                  <li>Blogs</li>
+                  <li>Become a Agent</li>
+               </ul>
+               <ul class="footer-item footer-item3">
+                  <h4>Discovery</h4>
+                  <li>Canada</li>
+                  <li>United States</li>
+                  <li>Germany</li>
+                  <li>Africa</li>
+               </ul>
+               <div class="footer-item footer-item4">
+                  <h4 class="media-title follow-us">
+                     Subscribe to our Newsletter!
+                  </h4>
+                  <form class="footer-form" action="">
+                     <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                     />
+                     <button class="submit-arrow-btn">
+                        <img
+                           src="images/hero-stars-elements-images/arrow.png"
+                           alt="arrow"
+                        />
+                     </button>
+                  </form>
+                  <label for="email"></label>
+
+                  <h4 class="media-title follow-us">Follow Us on</h4>
+                  <img
+                     src="images/hero-stars-elements-images/madia.png
+          "
+                     alt="social media"
+                  />
+               </div>
+            </div>
+         </section>
+      </footer>
+   </body>
+</html>
